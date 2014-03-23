@@ -3,7 +3,6 @@ development:
   encoding: unicode
   database: wedding_app_development
   pool: 5
-  username: rigelstpierre
   password:
 
 test:
@@ -11,6 +10,5 @@ test:
   encoding: unicode
   database: wedding_app_test
   pool: 5
-  username: rigelstpierre 
   password:
 
