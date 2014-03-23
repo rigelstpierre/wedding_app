@@ -5,7 +5,7 @@ class WeddingApp.RsvpsController extends WeddingApp.ApplicationController
     @set('rsvps', WeddingApp.Rsvp.get('all'))
 
   show: (params) ->
-    WeddingApp.Rsvp.find params.id, @errorHandler (rvsp) =>
+    WeddingApp.Rsvp.find params.id, @errorHandler (rsvp) =>
       @set('rsvp', rsvp)
 
   edit: (params) ->
