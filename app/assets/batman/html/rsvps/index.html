@@ -1,0 +1,8 @@
+<span data-bind="'rsvp' | pluralize rsvps.length"></span>
+
+<ul>
+  <li data-foreach-rsvp="rsvps">
+    <a data-bind="rsvp.name" data-route="rsvp"></a> |
+    <a data-event-click="destroy">Destroy</a>
+  </li>
+</ul>

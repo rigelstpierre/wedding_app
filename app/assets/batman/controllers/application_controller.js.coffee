@@ -1,0 +1,1 @@
+class WeddingApp.ApplicationController extends Batman.Controller
