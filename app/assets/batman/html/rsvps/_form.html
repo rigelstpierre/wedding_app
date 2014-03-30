@@ -1,0 +1,27 @@
+<div>
+  <label>Full Name(s):</label>
+  <input data-bind="rsvp.name" />
+</div>
+
+<div>
+  <label>Email:</label>
+  <input data-bind="rsvp.email" />
+</div>
+
+
+<div class="form-group">
+  <label>Attending:</label>
+  <label class="radio-inline" data-addclass-selected="rsvp.rsvp | equals 'True'">
+      <input type="radio" name="rsvp" value="true"  data-bind='rsvp.rsvp' > Wouldn't Miss it!
+  </label>
+  <label class="radio-inline" data-addclass-selected="rsvp.rsvp | equals 'false'">
+     <input type="radio" name="rsvp" value="false" data-bind='rsvp.rsvp'> Super bummed, can't make it, but will be there in spirit
+  </label>
+</div>
+
+<div>
+  <label>Special Message:</label>
+  <textarea data-bind="rsvp.note"></textarea>
+</div>
+
+<input name="commit" type="submit" value="Submit">

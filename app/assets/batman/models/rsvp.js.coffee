@@ -4,6 +4,6 @@ class WeddingApp.Rsvp extends Batman.Model
 
   @persist Batman.RailsStorage
 
-  @encode 'name', 'email', 'rsvp'
+  @encode 'name', 'email', 'note', 'rsvp'
   @encodeTimestamps()
 
